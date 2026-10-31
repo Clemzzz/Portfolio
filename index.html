@@ -1,68 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="Portfolio de Clément Bazin, étudiant en BUT Informatique à l'IUT d'Ifs (Université de Caen Normandie). Découvrez mes projets en C, Python, Java, Web, SQL et Systèmes."
+    />
+    <meta name="author" content="Clément Bazin" />
+    <title>Clément Bazin — Portfolio Étudiant en Informatique</title>
+    <link rel="icon" type="image/png" href="assets/images/avatar-hero.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Clément Bazin</div>
-      <div class="nav-right">
-        <ul class="nav-links">
-          <li><a href="#about" data-i18n="nav.about">About</a></li>
-          <li><a href="#experience" data-i18n="nav.skills">Skills</a></li>
-          <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
-          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
-        </ul>
-        <label class="switch theme-switch">
-          <input id="theme-toggle" type="checkbox" />
-          <span class="slider">
-            <div class="star star_1"></div>
-            <div class="star star_2"></div>
-            <div class="star star_3"></div>
-            <svg viewBox="0 0 16 16" class="cloud_1 cloud">
-              <path
-                transform="matrix(.77976 0 0 .78395-299.99-418.63)"
-                fill="#fff"
-                d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"
-              ></path>
-            </svg>
-          </span>
-        </label>
-        <div class="lang-switcher">
-          <button class="lang-btn" data-lang="fr" onclick="setLanguage('fr')">
-            <img width="24" height="24" src="https://img.icons8.com/color/48/france.png" alt="france" />
-          </button>
-          <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">
-            <img width="24" height="24" src="https://img.icons8.com/color/48/usa.png" alt="usa" />
-          </button>
-        </div>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Clément Bazin</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" data-i18n="nav.about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" data-i18n="nav.skills" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" data-i18n="nav.projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" data-i18n="nav.contact" onclick="toggleMenu()">Contact</a></li>
-          <li class="menu-theme-switcher">
-            <label class="switch">
-              <input id="theme-toggle-mobile" type="checkbox" />
-              <span class="slider">
-                <div class="star star_1"></div>
-                <div class="star star_2"></div>
-                <div class="star star_3"></div>
-                <svg viewBox="0 0 16 16" class="cloud_1 cloud">
+    <!-- Skip to main content (WCAG 2.4.1) -->
+    <a href="#main-content" class="skip-link" data-i18n="nav.skip">
+      Aller au contenu principal
+    </a>
+
+    <!-- Polite Live Region for Screen Readers (WCAG 4.1.3) -->
+    <div id="live-status" role="status" aria-live="polite" class="sr-only"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Ambient Background Glows -->
+    <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+
+    <!-- Sticky Glassmorphic Header -->
+    <header class="site-header" id="top">
+      <nav id="desktop-nav" aria-label="Navigation principale">
+        <a href="#profile" class="logo">
+          Clément <span class="logo-accent">Bazin</span>
+        </a>
+        <div class="nav-right">
+          <ul class="nav-links">
+            <li><a href="#about" class="nav-link" data-i18n="nav.about">À propos</a></li>
+            <li><a href="#experience" class="nav-link" data-i18n="nav.skills">Compétences</a></li>
+            <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projets</a></li>
+            <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+
+          <div class="nav-controls">
+            <!-- Theme Switch (Sun = Light / Moon = Dark) -->
+            <label class="switch theme-switch" title="Basculer le thème clair ou sombre">
+              <input
+                id="theme-toggle"
+                type="checkbox"
+                aria-label="Basculer le thème clair ou sombre"
+              />
+              <span class="slider" aria-hidden="true">
+                <span class="star star_1"></span>
+                <span class="star star_2"></span>
+                <span class="star star_3"></span>
+                <svg viewBox="0 0 16 16" class="cloud_1 cloud" aria-hidden="true">
                   <path
                     transform="matrix(.77976 0 0 .78395-299.99-418.63)"
                     fill="#fff"
@@ -71,262 +70,621 @@
                 </svg>
               </span>
             </label>
-          </li>
-          <li class="menu-lang-switcher">
-            <button class="lang-btn" data-lang="fr" onclick="setLanguage('fr'); toggleMenu();">
-              <img width="24" height="24" src="https://img.icons8.com/color/48/france.png" alt="france" />
-            </button>
-            <button class="lang-btn" data-lang="en" onclick="setLanguage('en'); toggleMenu();">
-              <img width="24" height="24" src="https://img.icons8.com/color/48/usa.png" alt="usa" />
-            </button>
-          </li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="image.png" alt="Clément Bazin Picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1" data-i18n="profile.greeting">Hello, I'm</p>
-        <h1 class="title">Clément Bazin</h1>
-        <p class="section__text__p2" data-i18n="profile.role">Computer Science Student</p>
-        <div class="btn-container">
-        </div>
-        <div id="socials-container">
-          <img
-            src="linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/clément-bazin-095612360'"
-          />
-          <img
-            src="github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Clemzzz'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1" data-i18n="about.subtitle">Get To Know More</p>
-      <h1 class="title" data-i18n="about.title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="imagewait.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3 data-i18n="about.experienceTitle">Experience</h3>
-              <p data-i18n="about.experienceText">3 years <br />Basic Developement</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3 data-i18n="about.educationTitle">Education</h3>
-              <p data-i18n="about.educationText">Computer Science <br />IUT Campus 3 IFS</p>
+
+            <!-- Language Switcher -->
+            <div class="lang-switcher" role="group" aria-label="Sélecteur de langue">
+              <button
+                type="button"
+                class="lang-btn"
+                data-lang="fr"
+                onclick="setLanguage('fr')"
+                aria-label="Français"
+              >
+                <img width="20" height="20" src="https://img.icons8.com/color/48/france.png" alt="" aria-hidden="true" />
+                <span>FR</span>
+              </button>
+              <button
+                type="button"
+                class="lang-btn"
+                data-lang="en"
+                onclick="setLanguage('en')"
+                aria-label="English"
+              >
+                <img width="20" height="20" src="https://img.icons8.com/color/48/usa.png" alt="" aria-hidden="true" />
+                <span>EN</span>
+              </button>
             </div>
           </div>
-          <div class="text-container">
-            <p data-i18n="about.text">
-              My name is Clément, and I am currently pursuing a Bachelor’s degree in Computer Science at the IUT in Ifs (Campus 3). Passionate about programming and systems, I have grown since graduating from high school (with a focus on Math and Computer Science) to become a versatile future engineer. With proficiency in several programming languages (C, Python, Java, SQL, Shell), I am a persistent and curious individual, capable of working both independently and as part of a team. An avid tennis player and music lover, I enjoy tackling complex challenges and turning ideas into functional solutions.
-            </p>
-          </div>
         </div>
-      </div>
-    </section>
-    <section id="experience">
-      <p class="section__text__p1" data-i18n="skills.subtitle">Explore My</p>
-      <h1 class="title" data-i18n="skills.title">Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title" data-i18n="skills.devTitle">Developpement</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="html-5.png"
-                  alt="HTML icon"
-                  class="icon"
+      </nav>
+
+      <!-- Mobile Navigation -->
+      <nav id="hamburger-nav" aria-label="Navigation mobile">
+        <a href="#profile" class="logo">
+          Clément <span class="logo-accent">Bazin</span>
+        </a>
+        <div class="hamburger-menu">
+          <button
+            type="button"
+            class="hamburger-icon"
+            onclick="toggleMenu()"
+            aria-label="Ouvrir le menu de navigation"
+            aria-expanded="false"
+            aria-controls="mobile-menu-links"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="menu-links" id="mobile-menu-links">
+            <li><a href="#about" data-i18n="nav.about" onclick="toggleMenu()">À propos</a></li>
+            <li><a href="#experience" data-i18n="nav.skills" onclick="toggleMenu()">Compétences</a></li>
+            <li><a href="#projects" data-i18n="nav.projects" onclick="toggleMenu()">Projets</a></li>
+            <li><a href="#contact" data-i18n="nav.contact" onclick="toggleMenu()">Contact</a></li>
+            <li class="menu-theme-switcher">
+              <label class="switch">
+                <input
+                  id="theme-toggle-mobile"
+                  type="checkbox"
+                  aria-label="Basculer le thème clair ou sombre"
                 />
-                <div>
-                  <h3 data-i18n="skills.htmlTitle">HTML</h3>
-                  <p data-i18n="skills.basic">Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="css-3.png"
-                  alt="CSS icon"
-                  class="icon"
-                />
-                <div>
-                  <h3 data-i18n="skills.cssTitle">CSS</h3>
-                  <p data-i18n="skills.basic">Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="python.png"
-                  alt="Python icon"
-                  class="icon"
-                />
-                <div>
-                  <h3 data-i18n="skills.pythonTitle">Python</h3>
-                  <p data-i18n="skills.basic">Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="JavaScript-logo.png"
-                  alt="java script icon"
-                  class="icon"
-                />
-                <div>
-                  <h3 data-i18n="skills.jsTitle">JavaScript</h3>
-                  <p data-i18n="skills.notion">Notion</p>
-                </div>
-              </article>
-              <article>
-                <img width="48" height="48" src="https://img.icons8.com/fluency/48/sql.png" alt="sql"/>
-                <div>
-                  <h3 data-i18n="skills.sqlTitle">SQL</h3>
-                  <p data-i18n="skills.basic">Basic</p>
-                </div>
-              </article>
-              <article>
-                <img width="50" height="50" src="https://img.icons8.com/sf-ultralight-filled/50/console.png" alt="console"/>
-                <div>
-                  <h3 data-i18n="skills.bashTitle">Bash / Shell</h3>
-                  <p data-i18n="skills.basic">Basic</p>
-                </div>
-              </article>
-              <article>
-                <img width="48" height="48" src="https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png" alt="java-coffee-cup-logo--v1"/>
-                <div>
-                  <h3 data-i18n="skills.javaTitle">Java</h3>
-                  <p data-i18n="skills.basic">Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="C_Programming_Language.svg.png"
-                  alt="java script icon"
-                  class="icon"
-                />
-                <div>
-                  <h3 data-i18n="skills.cTitle">C</h3>
-                  <p data-i18n="skills.basic">Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-    </section>
-    <section id="projects">
-      <p class="section__text__p1" data-i18n="projects.subtitle">Découvrez mes</p>
-      <h1 class="title" data-i18n="projects.title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container project-card">
-            <h2 class="experience-sub-title project-title" data-i18n="projects.eduTitle">
-              PROJET ÉDUC’ARTE
-            </h2>
-            <p class="project-meta" data-i18n="projects.eduMeta">Projet pédagogique • 2024–2025</p>
-            <p data-i18n="projects.eduText">
-              Création d’un serveur web pour simuler l’effet de serre, hébergé sur une
-              carte ESP32. Utilisation de capteurs d'humidité et de température,
-              enregistrement des résultats en CSV.
-            </p>
-            <p class="project-tech" data-i18n="projects.eduTech">Technologies : Python, HTML5, CSS3.</p>
-          </div>
-          <div class="details-container color-container project-card">
-            <h2 class="experience-sub-title project-title" data-i18n="projects.gameTitle">
-              ARCHITECTURE C-ENGINE
-            </h2>
-            <p class="project-meta" data-i18n="projects.gameMeta">Projet universitaire • 2025–2026</p>
-            <p data-i18n="projects.gameText">
-              Implémentation complète du moteur de jeu et de la logique de
-              déplacement. Création d’une interface console ergonomique avec gestion
-              des erreurs de saisie, le tout en langage C.
-            </p>
-            <p class="project-tech" data-i18n="projects.gameTech">Technologies : C, gestion d’erreurs, architecture de moteur de jeu.</p>
-          </div>
-          <div class="details-container color-container project-card">
-            <h2 class="experience-sub-title project-title" data-i18n="projects.saeTitle">
-              POSTE DE DÉVELOPPEMENT VIRTUEL
-            </h2>
-            <p class="project-meta" data-i18n="projects.saeMeta">Projet universitaire • 2025–2026</p>
-            <p data-i18n="projects.saeText">
-              Installation d'un poste pour le développement. Configuration d'une
-              machine virtuelle en dual boot Windows 10/Ubuntu avec partitionnement
-              commun et gestion d'utilisateurs.
-            </p>
-            <p class="project-tech" data-i18n="projects.saeTech">Technologies : Windows 10, Ubuntu, virtualisation, gestion des utilisateurs.</p>
-          </div>
-          <div class="details-container color-container project-card">
-            <h2 class="experience-sub-title project-title" data-i18n="projects.sae2Title">
-              COMMUNAUTÉ LISIEUX NORMANDIE
-            </h2>
-            <p class="project-meta" data-i18n="projects.saeMeta">Projet universitaire • 2025–2026</p>
-            <p data-i18n="projects.sae2Text">
-              Création d'un site web et d'une base de données pour accompagner l'élaboration 
-              du Plan Local de Déplacements (PLD). L'objectif est de recenser les besoins 
-              de mobilité de 73 700 habitants face aux enjeux de la transition énergétique.
-            </p>
-            <p class="project-tech" data-i18n="projects.sae2Tech">Technologies : HTML5, CSS3, SQL, Maquettage (UI/UX), Gestion de projet (Backlog).</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <p class="section__text__p1" data-i18n="contact.subtitle">Get in Touch</p>
-      <h1 class="title" data-i18n="contact.title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:clementbazin@icloud.com">clementbazin@icloud.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com" data-i18n="contact.linkedin">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about" data-i18n="nav.about">About</a></li>
-            <li><a href="#experience" data-i18n="nav.skills">Skills</a></li>
-            <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
-            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                <span class="slider" aria-hidden="true">
+                  <span class="star star_1"></span>
+                  <span class="star star_2"></span>
+                  <span class="star star_3"></span>
+                  <svg viewBox="0 0 16 16" class="cloud_1 cloud" aria-hidden="true">
+                    <path
+                      transform="matrix(.77976 0 0 .78395-299.99-418.63)"
+                      fill="#fff"
+                      d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"
+                    ></path>
+                  </svg>
+                </span>
+              </label>
+            </li>
+            <li class="menu-lang-switcher">
+              <button
+                type="button"
+                class="lang-btn"
+                data-lang="fr"
+                onclick="setLanguage('fr'); toggleMenu();"
+                aria-label="Français"
+              >
+                <img width="20" height="20" src="https://img.icons8.com/color/48/france.png" alt="" aria-hidden="true" />
+                <span>FR</span>
+              </button>
+              <button
+                type="button"
+                class="lang-btn"
+                data-lang="en"
+                onclick="setLanguage('en'); toggleMenu();"
+                aria-label="English"
+              >
+                <img width="20" height="20" src="https://img.icons8.com/color/48/usa.png" alt="" aria-hidden="true" />
+                <span>EN</span>
+              </button>
+            </li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2026 Clément Bazin. All Rights Reserved.</p>
+    </header>
+
+    <main id="main-content">
+      <!-- HERO / PROFILE SECTION -->
+      <section id="profile" class="reveal">
+        <div class="section__pic-container hero-avatar-wrapper">
+          <div class="avatar-ring" aria-hidden="true"></div>
+          <img
+            src="assets/images/avatar-hero.png"
+            alt="Avatar Memoji de Clément Bazin"
+            width="310"
+            height="310"
+            class="hero-avatar"
+          />
+          <div class="floating-badge badge-code" aria-hidden="true">
+            <span class="mono">&lt;C · Python · Web /&gt;</span>
+          </div>
+        </div>
+
+        <div class="section__text">
+          <div class="status-pill">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span data-i18n="profile.status">Étudiant en BUT Informatique • Caen / Ifs</span>
+          </div>
+          <p class="section__text__p1" data-i18n="profile.greeting">Bonjour, je suis</p>
+          <h1 class="title hero-title">Clément <span class="gradient-text">Bazin</span></h1>
+          <p class="section__text__p2">
+            <span id="typed-role" data-i18n="profile.role">Étudiant en Informatique</span>
+          </p>
+          <p class="hero-summary" data-i18n="profile.summary">
+            Passionné par le développement logiciel, l’architecture système et la conception d’applications modernes.
+          </p>
+
+          <div class="btn-container">
+            <a href="#projects" class="btn btn-color-1">
+              <span data-i18n="profile.ctaProjects">Voir mes projets</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-color-2" data-i18n="profile.ctaContact">
+              Me contacter
+            </a>
+          </div>
+
+          <div id="socials-container">
+            <a
+              href="https://www.linkedin.com/in/clément-bazin-095612360"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-btn"
+              aria-label="Profil LinkedIn de Clément Bazin"
+              title="LinkedIn"
+            >
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+              </svg>
+            </a>
+            <a
+              href="https://github.com/Clemzzz"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-btn"
+              aria-label="Profil GitHub de Clément Bazin"
+              title="GitHub"
+            >
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+              </svg>
+            </a>
+            <a
+              href="mailto:clementbazin@icloud.com"
+              class="social-btn"
+              aria-label="Envoyer un email à clementbazin@icloud.com"
+              title="clementbazin@icloud.com"
+            >
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="reveal">
+        <div class="section-header">
+          <p class="section__text__p1" data-i18n="about.subtitle">En savoir plus</p>
+          <h2 class="title" data-i18n="about.title">À propos de moi</h2>
+        </div>
+
+        <div class="section-container about-grid">
+          <div class="section__pic-container about-pic-wrapper">
+            <img
+              src="assets/images/avatar-about.png"
+              alt="Illustration Memoji de Clément Bazin"
+              width="250"
+              height="250"
+              loading="lazy"
+              class="about-pic"
+            />
+          </div>
+
+          <div class="about-details-container">
+            <div class="about-containers stagger-group">
+              <div class="details-container highlight-card stagger-item">
+                <div class="card-icon-badge" aria-hidden="true">
+                  <img src="assets/icons/experience.png" alt="" class="icon adapt-icon" />
+                </div>
+                <h3 data-i18n="about.experienceTitle">Expérience</h3>
+                <p data-i18n="about.experienceText">3+ ans<br />Programmation & Projets</p>
+              </div>
+
+              <div class="details-container highlight-card stagger-item">
+                <div class="card-icon-badge" aria-hidden="true">
+                  <img src="assets/icons/education.png" alt="" class="icon adapt-icon" />
+                </div>
+                <h3 data-i18n="about.educationTitle">Formation</h3>
+                <p data-i18n="about.educationText">BUT Informatique<br />IUT Campus 3 Ifs (Caen)</p>
+              </div>
+
+              <div class="details-container highlight-card stagger-item">
+                <div class="card-icon-badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                </div>
+                <h3 data-i18n="about.focusTitle">Objectif</h3>
+                <p data-i18n="about.focusText">Ingénierie Logicielle<br />& Systèmes</p>
+              </div>
+            </div>
+
+            <div class="text-container about-bio-box">
+              <p data-i18n="about.text">
+                Je m’appelle Clément et je prépare actuellement un BUT en informatique à l’IUT d’Ifs (Campus 3 de l’Université de Caen Normandie). Passionné par la programmation et les systèmes, j’ai évolué depuis le lycée (spécialités Mathématiques et Numérique & Sciences Informatiques) pour devenir un futur ingénieur polyvalent. À l’aise avec plusieurs langages (C, Python, Java, SQL, Shell), je suis persévérant et curieux, capable de travailler aussi bien en autonomie qu’en équipe. Joueur de tennis et amateur de musique, j’aime relever des défis complexes et transformer des idées en solutions fonctionnelles.
+              </p>
+
+              <div class="about-timeline">
+                <div class="timeline-item">
+                  <span class="timeline-year">2025 – Présent</span>
+                  <div class="timeline-info">
+                    <strong data-i18n="about.tl1Title">BUT Informatique — IUT Grand Ouest Normandie (Ifs)</strong>
+                    <span data-i18n="about.tl1Desc">Algorithmique, langage C, Java, bases de données SQL, administration système Linux, gestion de projet.</span>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <span class="timeline-year">2022 – 2025</span>
+                  <div class="timeline-info">
+                    <strong data-i18n="about.tl2Title">Baccalauréat Général — Institution Sainte-Marie (Caen)</strong>
+                    <span data-i18n="about.tl2Desc">Spécialités Mathématiques & NSI (Numérique et Sciences Informatiques).</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section id="experience" class="reveal">
+        <div class="section-header">
+          <p class="section__text__p1" data-i18n="skills.subtitle">Découvrez mes</p>
+          <h2 class="title" data-i18n="skills.title">Compétences</h2>
+        </div>
+
+        <div class="skills-grid stagger-group">
+          <!-- Category 1: Programming Languages -->
+          <div class="details-container skill-category-card stagger-item">
+            <div class="skill-card-header">
+              <span class="skill-category-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </span>
+              <h3 class="experience-sub-title" data-i18n="skills.catLang">Langages & Logiciel</h3>
+            </div>
+            <div class="article-container">
+              <article class="skill-item">
+                <img src="assets/icons/c.png" alt="" aria-hidden="true" loading="lazy" class="icon" />
+                <div>
+                  <h4 data-i18n="skills.cTitle">C</h4>
+                  <p class="skill-level" data-i18n="skills.intermediate">Intermédiaire</p>
+                </div>
+              </article>
+              <article class="skill-item">
+                <img src="assets/icons/python.png" alt="" aria-hidden="true" loading="lazy" class="icon" />
+                <div>
+                  <h4 data-i18n="skills.pythonTitle">Python</h4>
+                  <p class="skill-level" data-i18n="skills.intermediate">Intermédiaire</p>
+                </div>
+              </article>
+              <article class="skill-item">
+                <img width="40" height="40" src="https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png" alt="" aria-hidden="true" loading="lazy" class="icon" />
+                <div>
+                  <h4 data-i18n="skills.javaTitle">Java</h4>
+                  <p class="skill-level" data-i18n="skills.intermediate">Intermédiaire</p>
+                </div>
+              </article>
+              <article class="skill-item">
+                <img src="assets/icons/javascript.png" alt="" aria-hidden="true" loading="lazy" class="icon" />
+                <div>
+                  <h4 data-i18n="skills.jsTitle">JavaScript</h4>
+                  <p class="skill-level" data-i18n="skills.basic">Bases solides</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Category 2: Web & Databases -->
+          <div class="details-container skill-category-card stagger-item">
+            <div class="skill-card-header">
+              <span class="skill-category-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </span>
+              <h3 class="experience-sub-title" data-i18n="skills.catWeb">Web & Bases de données</h3>
+            </div>
+            <div class="article-container">
+              <article class="skill-item">
+                <img src="assets/icons/html5.png" alt="" aria-hidden="true" loading="lazy" class="icon" />
+                <div>
+                  <h4 data-i18n="skills.htmlTitle">HTML5</h4>
+                  <p class="skill-level" data-i18n="skills.advanced">Avancé</p>
+                </div>
+              </article>
+              <article class="skill-item">
+                <img src="assets/icons/css3.png" alt="" aria-hidden="true" loading="lazy" class="icon" />
+                <div>
+                  <h4 data-i18n="skills.cssTitle">CSS3 / Responsive</h4>
+                  <p class="skill-level" data-i18n="skills.advanced">Avancé</p>
+                </div>
+              </article>
+              <article class="skill-item">
+                <img width="40" height="40" src="https://img.icons8.com/fluency/48/sql.png" alt="" aria-hidden="true" loading="lazy" class="icon" />
+                <div>
+                  <h4 data-i18n="skills.sqlTitle">SQL & Modélisation</h4>
+                  <p class="skill-level" data-i18n="skills.intermediate">Intermédiaire</p>
+                </div>
+              </article>
+              <article class="skill-item">
+                <img width="40" height="40" src="https://img.icons8.com/fluency/48/design.png" alt="" aria-hidden="true" loading="lazy" class="icon" />
+                <div>
+                  <h4 data-i18n="skills.uiTitle">Maquettage UI/UX</h4>
+                  <p class="skill-level" data-i18n="skills.basic">Bases solides</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Category 3: Systems & Tools -->
+          <div class="details-container skill-category-card stagger-item">
+            <div class="skill-card-header">
+              <span class="skill-category-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <path d="m6 8 4 4-4 4"></path>
+                  <line x1="12" y1="16" x2="18" y2="16"></line>
+                </svg>
+              </span>
+              <h3 class="experience-sub-title" data-i18n="skills.catSys">Systèmes & Outils</h3>
+            </div>
+            <div class="article-container">
+              <article class="skill-item">
+                <img width="40" height="40" src="https://img.icons8.com/sf-ultralight-filled/50/console.png" alt="" aria-hidden="true" loading="lazy" class="icon adapt-icon" />
+                <div>
+                  <h4 data-i18n="skills.bashTitle">Bash / Shell</h4>
+                  <p class="skill-level" data-i18n="skills.intermediate">Intermédiaire</p>
+                </div>
+              </article>
+              <article class="skill-item">
+                <img width="40" height="40" src="https://img.icons8.com/color/48/linux--v1.png" alt="" aria-hidden="true" loading="lazy" class="icon" />
+                <div>
+                  <h4 data-i18n="skills.linuxTitle">Linux / Virtualisation</h4>
+                  <p class="skill-level" data-i18n="skills.intermediate">Intermédiaire</p>
+                </div>
+              </article>
+              <article class="skill-item">
+                <img src="assets/icons/github.png" alt="" aria-hidden="true" loading="lazy" class="icon adapt-icon" />
+                <div>
+                  <h4 data-i18n="skills.gitTitle">Git & GitHub</h4>
+                  <p class="skill-level" data-i18n="skills.intermediate">Intermédiaire</p>
+                </div>
+              </article>
+              <article class="skill-item">
+                <img width="40" height="40" src="https://img.icons8.com/fluency/48/raspberry-pi.png" alt="" aria-hidden="true" loading="lazy" class="icon" />
+                <div>
+                  <h4 data-i18n="skills.iotTitle">ESP32 & Capteurs</h4>
+                  <p class="skill-level" data-i18n="skills.basic">Bases solides</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="reveal">
+        <div class="section-header">
+          <p class="section__text__p1" data-i18n="projects.subtitle">Découvrez mes</p>
+          <h2 class="title" data-i18n="projects.title">Projets réalisés</h2>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filters" role="group" aria-label="Filtrer les projets par catégorie">
+          <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true" data-i18n="projects.filterAll">Tous</button>
+          <button type="button" class="filter-btn" data-filter="web" aria-pressed="false" data-i18n="projects.filterWeb">Web & Data</button>
+          <button type="button" class="filter-btn" data-filter="system" aria-pressed="false" data-i18n="projects.filterSys">Système & C</button>
+          <button type="button" class="filter-btn" data-filter="iot" aria-pressed="false" data-i18n="projects.filterIot">IoT & Embarqué</button>
+        </div>
+
+        <div class="projects-grid stagger-group">
+          <!-- Project 1: Lisieux Normandie -->
+          <article class="details-container color-container project-card stagger-item" data-category="web">
+            <div class="project-card-top">
+              <span class="project-badge">Web & SQL</span>
+              <span class="project-meta" data-i18n="projects.saeMeta">Projet universitaire • 2025–2026</span>
+            </div>
+            <h3 class="experience-sub-title project-title" data-i18n="projects.sae2Title">
+              COMMUNAUTÉ LISIEUX NORMANDIE
+            </h3>
+            <p class="project-description" data-i18n="projects.sae2Text">
+              Création d’un site web et d’une base de données pour accompagner l’élaboration du Plan Local de Déplacements (PLD). L’objectif est de recenser les besoins de mobilité de 73 700 habitants face aux enjeux de la transition énergétique.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">UI/UX</span>
+              <span class="tech-tag">Backlog Agile</span>
+            </div>
+          </article>
+
+          <!-- Project 2: Architecture C-Engine -->
+          <article class="details-container color-container project-card stagger-item" data-category="system">
+            <div class="project-card-top">
+              <span class="project-badge">Bas Niveau & C</span>
+              <span class="project-meta" data-i18n="projects.gameMeta">Projet universitaire • 2025–2026</span>
+            </div>
+            <h3 class="experience-sub-title project-title" data-i18n="projects.gameTitle">
+              ARCHITECTURE C-ENGINE
+            </h3>
+            <p class="project-description" data-i18n="projects.gameText">
+              Implémentation complète du moteur de jeu et de la logique de déplacement. Création d’une interface console ergonomique avec gestion robuste des erreurs de saisie, le tout en langage C.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">Langage C</span>
+              <span class="tech-tag">Algorithmique</span>
+              <span class="tech-tag">Gestion d’erreurs</span>
+              <span class="tech-tag">Console UI</span>
+            </div>
+          </article>
+
+          <!-- Project 3: Poste de développement virtuel -->
+          <article class="details-container color-container project-card stagger-item" data-category="system">
+            <div class="project-card-top">
+              <span class="project-badge">Systèmes & OS</span>
+              <span class="project-meta" data-i18n="projects.saeMeta">Projet universitaire • 2025–2026</span>
+            </div>
+            <h3 class="experience-sub-title project-title" data-i18n="projects.saeTitle">
+              POSTE DE DÉVELOPPEMENT VIRTUEL
+            </h3>
+            <p class="project-description" data-i18n="projects.saeText">
+              Installation et administration d’un poste complet pour le développement. Configuration d’une machine virtuelle en dual boot Windows 10 / Ubuntu avec partitionnement commun et gestion multi-utilisateurs.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">Ubuntu Linux</span>
+              <span class="tech-tag">Windows 10</span>
+              <span class="tech-tag">Virtualisation</span>
+              <span class="tech-tag">Partitionnement</span>
+            </div>
+          </article>
+
+          <!-- Project 4: Projet Éduc'Arte -->
+          <article class="details-container color-container project-card stagger-item" data-category="iot web">
+            <div class="project-card-top">
+              <span class="project-badge">IoT & Web</span>
+              <span class="project-meta" data-i18n="projects.eduMeta">Projet pédagogique • 2024–2025</span>
+            </div>
+            <h3 class="experience-sub-title project-title" data-i18n="projects.eduTitle">
+              PROJET ÉDUC’ARTE
+            </h3>
+            <p class="project-description" data-i18n="projects.eduText">
+              Création d’un serveur web embarqué pour simuler l’effet de serre, hébergé sur une carte microcontrôleur ESP32. Acquisition en temps réel via capteurs d’humidité et de température et export des données en CSV.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">ESP32</span>
+              <span class="tech-tag">HTML5 / CSS3</span>
+              <span class="tech-tag">Capteurs & CSV</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="projects-footer-cta">
+          <a
+            href="https://github.com/Clemzzz"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-color-2 github-more-btn"
+          >
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+              <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+            </svg>
+            <span data-i18n="projects.githubCta">Voir mon GitHub (@Clemzzz)</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="reveal">
+        <div class="section-header">
+          <p class="section__text__p1" data-i18n="contact.subtitle">Entrons en contact</p>
+          <h2 class="title" data-i18n="contact.title">Contactez-moi</h2>
+          <p class="contact-intro" data-i18n="contact.intro">
+            Vous avez une opportunité de stage, d’alternance ou un projet à partager ? N’hésitez pas à m’écrire !
+          </p>
+        </div>
+
+        <div class="contact-info-upper-container stagger-group">
+          <!-- Email Card -->
+          <div class="contact-info-container stagger-item">
+            <div class="contact-icon-wrapper" aria-hidden="true">
+              <img src="assets/icons/email.png" alt="" class="icon contact-icon email-icon adapt-icon" />
+            </div>
+            <div class="contact-details">
+              <span class="contact-label">Email</span>
+              <a href="mailto:clementbazin@icloud.com" id="email-address">clementbazin@icloud.com</a>
+            </div>
+            <button
+              type="button"
+              class="copy-btn"
+              onclick="copyEmail()"
+              id="copy-email-btn"
+              aria-label="Copier l'adresse email clementbazin@icloud.com"
+            >
+              <span class="copy-icon-stack" aria-hidden="true">
+                <svg class="icon-state icon-copy" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <svg class="icon-state icon-check" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+              <span id="copy-email-label" data-i18n="contact.copy">Copier</span>
+            </button>
+          </div>
+
+          <!-- LinkedIn Card -->
+          <div class="contact-info-container stagger-item">
+            <div class="contact-icon-wrapper" aria-hidden="true">
+              <img src="assets/icons/linkedin.png" alt="" class="icon contact-icon adapt-icon" />
+            </div>
+            <div class="contact-details">
+              <span class="contact-label">LinkedIn</span>
+              <a
+                href="https://www.linkedin.com/in/clément-bazin-095612360"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="contact.linkedin"
+              >
+                Clément Bazin
+              </a>
+            </div>
+          </div>
+
+          <!-- GitHub Card -->
+          <div class="contact-info-container stagger-item">
+            <div class="contact-icon-wrapper" aria-hidden="true">
+              <img src="assets/icons/github.png" alt="" class="icon contact-icon adapt-icon" />
+            </div>
+            <div class="contact-details">
+              <span class="contact-label">GitHub</span>
+              <a
+                href="https://github.com/Clemzzz"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                github.com/Clemzzz
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <a href="#top" class="logo footer-logo">
+          Clément <span class="logo-accent">Bazin</span>
+        </a>
+        <nav aria-label="Navigation pied de page">
+          <ul class="nav-links footer-links">
+            <li><a href="#about" data-i18n="nav.about">À propos</a></li>
+            <li><a href="#experience" data-i18n="nav.skills">Compétences</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">Projets</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </nav>
+        <p class="copyright" data-i18n="footer.rights">
+          Copyright &#169; 2026 Clément Bazin. Tous droits réservés.
+        </p>
+      </div>
     </footer>
-    <script src="script.js"></script>
+
+    <!-- Back to Top Button -->
+    <a href="#top" id="back-to-top" aria-label="Retour en haut de la page" title="Retour en haut">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="m18 15-6-6-6 6"/>
+      </svg>
+    </a>
+
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
