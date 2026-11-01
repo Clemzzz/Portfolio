@@ -459,9 +459,16 @@ section#profile {
 .status-pill {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.85rem;
+  gap: 0.55rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
   color: var(--color-text-secondary);
+  background: color-mix(in oklab, var(--color-bg-subtle) 75%, transparent);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  padding: 0.35rem 0.85rem;
   margin-bottom: 1.75rem;
 }
 
@@ -470,6 +477,8 @@ section#profile {
   height: 7px;
   border-radius: 50%;
   background: var(--color-status);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-status) 20%, transparent);
+  flex-shrink: 0;
 }
 
 #profile .section__text__p1 {
@@ -738,20 +747,22 @@ section#profile {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
 }
 
 .skill-category-card {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .skill-card-header {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  padding-bottom: 1rem;
-  margin-bottom: 0.5rem;
+  padding-bottom: 0.9rem;
+  margin-bottom: 0.85rem;
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -771,57 +782,32 @@ section#profile {
   line-height: 1.3;
 }
 
-.article-container {
+.skill-tags {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.skill-item {
-  display: flex;
-  align-items: center;
-  gap: 0.85rem;
-  padding: 0.75rem 0;
-  border-bottom: 1px solid var(--color-border);
-}
-
-.skill-item:last-child {
-  border-bottom: none;
-}
-
-/* Logos desaturated for a calm, uniform look */
-.skill-item .icon {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-  flex-shrink: 0;
-  filter: grayscale(1);
-  opacity: 0.75;
-  transition: filter 200ms ease, opacity 200ms ease;
-}
-
-body.dark-theme .skill-item .icon.adapt-icon {
-  filter: invert(1);
-}
-
-.skill-item > div {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 0.75rem;
-  flex: 1;
-  min-width: 0;
-}
-
-.skill-item h4 {
-  font-size: 0.92rem;
-  font-weight: 500;
-}
-
-.skill-level {
+.skill-tag {
   font-family: "JetBrains Mono", ui-monospace, monospace;
-  font-size: 0.72rem;
-  color: var(--color-text-muted);
-  white-space: nowrap;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--color-text-secondary);
+  background: var(--color-bg-subtle);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.4rem 0.75rem;
+  transition: border-color 150ms ease, color 150ms ease, background-color 150ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .skill-tag:hover {
+    border-color: var(--color-border-strong);
+    color: var(--color-text-primary);
+  }
 }
 
 /* 8. PROJECTS ============================================================== */
@@ -1150,11 +1136,6 @@ footer {
     border-color: var(--color-border-strong);
   }
 
-  .skill-item:hover .icon:not(.adapt-icon) {
-    filter: none;
-    opacity: 1;
-  }
-
   .contact-details a:hover {
     text-decoration-color: currentColor;
   }
@@ -1233,6 +1214,7 @@ footer {
     bottom: -12px;
   }
 
+  .skills-grid,
   .projects-grid {
     grid-template-columns: 1fr;
   }

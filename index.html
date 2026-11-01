@@ -9,7 +9,7 @@
       content="Portfolio de Clément Bazin, étudiant en BUT Informatique à l'IUT d'Ifs (Université de Caen Normandie). Découvrez mes projets en C, Python, Java, Web, SQL et Systèmes."
     />
     <meta name="author" content="Clément Bazin" />
-    <title>Clément Bazin — Portfolio Étudiant en Informatique</title>
+    <title>Clément Bazin - Portfolio</title>
     <link rel="icon" type="image/png" href="assets/images/avatar-hero.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -177,7 +177,7 @@
         <div class="section__text">
           <div class="status-pill">
             <span class="status-dot" aria-hidden="true"></span>
-            <span data-i18n="profile.status">Étudiant en BUT Informatique • Caen / Ifs</span>
+            <span data-i18n="profile.status">Recherche de stage Data / Backend • Avril 2027 • Caen &amp; alentours</span>
           </div>
           <p class="section__text__p1" data-i18n="profile.greeting">Bonjour, je suis</p>
           <h1 class="title hero-title">Clément <span class="gradient-text">Bazin</span></h1>
@@ -185,7 +185,7 @@
             <span id="typed-role" data-i18n="profile.role">Étudiant en Informatique</span>
           </p>
           <p class="hero-summary" data-i18n="profile.summary">
-            Passionné par le développement logiciel, l’architecture système et la conception d’applications modernes.
+            Étudiant en BUT Informatique, orienté développement backend, bases de données (SQL / Data) et environnements Linux.
           </p>
 
           <div class="btn-container">
@@ -322,135 +322,81 @@
         </div>
 
         <div class="skills-grid stagger-group">
-          <!-- Category 1: Programming Languages -->
+          <!-- Category 1: Databases & Data -->
           <div class="details-container skill-category-card stagger-item">
             <div class="skill-card-header">
               <span class="skill-category-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </span>
+              <h3 class="experience-sub-title" data-i18n="skills.catDb">Bases de données &amp; Data</h3>
+            </div>
+            <ul class="skill-tags">
+              <li class="skill-tag" data-i18n="skills.dbSql">SQL (PostgreSQL, Oracle SQL)</li>
+              <li class="skill-tag" data-i18n="skills.dbModel">Modélisation relationnelle (MCD/MLD)</li>
+              <li class="skill-tag" data-i18n="skills.dbPlsql">PL/SQL</li>
+            </ul>
+          </div>
+
+          <!-- Category 2: Backend & Languages -->
+          <div class="details-container skill-category-card stagger-item">
+            <div class="skill-card-header">
+              <span class="skill-category-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="16 18 22 12 16 6"></polyline>
                   <polyline points="8 6 2 12 8 18"></polyline>
                 </svg>
               </span>
-              <h3 class="experience-sub-title" data-i18n="skills.catLang">Langages & Logiciel</h3>
+              <h3 class="experience-sub-title" data-i18n="skills.catBackend">Backend &amp; Langages</h3>
             </div>
-            <div class="article-container">
-              <article class="skill-item">
-                <img src="assets/icons/c.png" alt="" aria-hidden="true" loading="lazy" class="icon" />
-                <div>
-                  <h4 data-i18n="skills.cTitle">C</h4>
-                  <p class="skill-level" data-i18n="skills.intermediate">Intermédiaire</p>
-                </div>
-              </article>
-              <article class="skill-item">
-                <img src="assets/icons/python.png" alt="" aria-hidden="true" loading="lazy" class="icon" />
-                <div>
-                  <h4 data-i18n="skills.pythonTitle">Python</h4>
-                  <p class="skill-level" data-i18n="skills.intermediate">Intermédiaire</p>
-                </div>
-              </article>
-              <article class="skill-item">
-                <img width="40" height="40" src="https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png" alt="" aria-hidden="true" loading="lazy" class="icon" />
-                <div>
-                  <h4 data-i18n="skills.javaTitle">Java</h4>
-                  <p class="skill-level" data-i18n="skills.intermediate">Intermédiaire</p>
-                </div>
-              </article>
-              <article class="skill-item">
-                <img src="assets/icons/javascript.png" alt="" aria-hidden="true" loading="lazy" class="icon" />
-                <div>
-                  <h4 data-i18n="skills.jsTitle">JavaScript</h4>
-                  <p class="skill-level" data-i18n="skills.basic">Bases solides</p>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <!-- Category 2: Web & Databases -->
-          <div class="details-container skill-category-card stagger-item">
-            <div class="skill-card-header">
-              <span class="skill-category-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="2" y1="12" x2="22" y2="12"></line>
-                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                </svg>
-              </span>
-              <h3 class="experience-sub-title" data-i18n="skills.catWeb">Web & Bases de données</h3>
-            </div>
-            <div class="article-container">
-              <article class="skill-item">
-                <img src="assets/icons/html5.png" alt="" aria-hidden="true" loading="lazy" class="icon" />
-                <div>
-                  <h4 data-i18n="skills.htmlTitle">HTML5</h4>
-                  <p class="skill-level" data-i18n="skills.advanced">Avancé</p>
-                </div>
-              </article>
-              <article class="skill-item">
-                <img src="assets/icons/css3.png" alt="" aria-hidden="true" loading="lazy" class="icon" />
-                <div>
-                  <h4 data-i18n="skills.cssTitle">CSS3 / Responsive</h4>
-                  <p class="skill-level" data-i18n="skills.advanced">Avancé</p>
-                </div>
-              </article>
-              <article class="skill-item">
-                <img width="40" height="40" src="https://img.icons8.com/fluency/48/sql.png" alt="" aria-hidden="true" loading="lazy" class="icon" />
-                <div>
-                  <h4 data-i18n="skills.sqlTitle">SQL & Modélisation</h4>
-                  <p class="skill-level" data-i18n="skills.intermediate">Intermédiaire</p>
-                </div>
-              </article>
-              <article class="skill-item">
-                <img width="40" height="40" src="https://img.icons8.com/fluency/48/design.png" alt="" aria-hidden="true" loading="lazy" class="icon" />
-                <div>
-                  <h4 data-i18n="skills.uiTitle">Maquettage UI/UX</h4>
-                  <p class="skill-level" data-i18n="skills.basic">Bases solides</p>
-                </div>
-              </article>
-            </div>
+            <ul class="skill-tags">
+              <li class="skill-tag" data-i18n="skills.langC">C</li>
+              <li class="skill-tag" data-i18n="skills.langPython">Python</li>
+              <li class="skill-tag" data-i18n="skills.langJava">Java</li>
+              <li class="skill-tag" data-i18n="skills.langBash">Bash / Shell Scripting</li>
+            </ul>
           </div>
 
           <!-- Category 3: Systems & Tools -->
           <div class="details-container skill-category-card stagger-item">
             <div class="skill-card-header">
               <span class="skill-category-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
                   <rect x="2" y="4" width="20" height="16" rx="2"></rect>
                   <path d="m6 8 4 4-4 4"></path>
                   <line x1="12" y1="16" x2="18" y2="16"></line>
                 </svg>
               </span>
-              <h3 class="experience-sub-title" data-i18n="skills.catSys">Systèmes & Outils</h3>
+              <h3 class="experience-sub-title" data-i18n="skills.catSys">Systèmes &amp; Outils</h3>
             </div>
-            <div class="article-container">
-              <article class="skill-item">
-                <img width="40" height="40" src="https://img.icons8.com/sf-ultralight-filled/50/console.png" alt="" aria-hidden="true" loading="lazy" class="icon adapt-icon" />
-                <div>
-                  <h4 data-i18n="skills.bashTitle">Bash / Shell</h4>
-                  <p class="skill-level" data-i18n="skills.intermediate">Intermédiaire</p>
-                </div>
-              </article>
-              <article class="skill-item">
-                <img width="40" height="40" src="https://img.icons8.com/color/48/linux--v1.png" alt="" aria-hidden="true" loading="lazy" class="icon" />
-                <div>
-                  <h4 data-i18n="skills.linuxTitle">Linux / Virtualisation</h4>
-                  <p class="skill-level" data-i18n="skills.intermediate">Intermédiaire</p>
-                </div>
-              </article>
-              <article class="skill-item">
-                <img src="assets/icons/github.png" alt="" aria-hidden="true" loading="lazy" class="icon adapt-icon" />
-                <div>
-                  <h4 data-i18n="skills.gitTitle">Git & GitHub</h4>
-                  <p class="skill-level" data-i18n="skills.intermediate">Intermédiaire</p>
-                </div>
-              </article>
-              <article class="skill-item">
-                <svg class="icon icon-svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="1.5"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg>
-                <div>
-                  <h4 data-i18n="skills.iotTitle">ESP32 & Capteurs</h4>
-                  <p class="skill-level" data-i18n="skills.basic">Bases solides</p>
-                </div>
-              </article>
+            <ul class="skill-tags">
+              <li class="skill-tag" data-i18n="skills.sysLinux">Linux (Arch, Ubuntu)</li>
+              <li class="skill-tag" data-i18n="skills.sysGit">Git &amp; GitHub CLI</li>
+              <li class="skill-tag" data-i18n="skills.sysDocker">Docker</li>
+              <li class="skill-tag" data-i18n="skills.sysVirt">Virtualisation</li>
+            </ul>
+          </div>
+
+          <!-- Category 4: Web -->
+          <div class="details-container skill-category-card stagger-item">
+            <div class="skill-card-header">
+              <span class="skill-category-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10z"></path>
+                </svg>
+              </span>
+              <h3 class="experience-sub-title" data-i18n="skills.catWeb">Web</h3>
             </div>
+            <ul class="skill-tags">
+              <li class="skill-tag" data-i18n="skills.webJs">JavaScript</li>
+              <li class="skill-tag" data-i18n="skills.webHtmlCss">HTML5 / CSS3</li>
+              <li class="skill-tag" data-i18n="skills.webApi">Conception d'APIs</li>
+            </ul>
           </div>
         </div>
       </section>
