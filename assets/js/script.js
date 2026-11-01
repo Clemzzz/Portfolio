@@ -113,7 +113,7 @@ const translations = {
     "about.educationTitle": "Education",
     "about.educationText": "B.Sc. (BUT) Computer Science\nIUT Campus 3 Ifs (Caen)",
     "about.focusTitle": "Goal",
-    "about.focusText": "Software & Systems\nEngineering",
+    "about.focusText": "Backend Development,\nData & AI",
     "about.text":
       "My name is Clément, and I am currently pursuing a Bachelor’s degree (BUT) in Computer Science at the IUT in Ifs (Campus 3, University of Caen Normandy). Passionate about programming and systems, I have grown since graduating from high school (specializing in Mathematics and Computer Science) to become a versatile future engineer. Proficient in several languages (C, Python, Java, SQL, Shell), I am persistent and curious, comfortable working both independently and in a team. An avid tennis player and music enthusiast, I enjoy tackling complex challenges and turning ideas into functional solutions.",
     "about.tl1Title":
@@ -205,7 +205,7 @@ const translations = {
     "about.educationTitle": "Formation",
     "about.educationText": "BUT Informatique\nIUT Campus 3 Ifs (Caen)",
     "about.focusTitle": "Objectif",
-    "about.focusText": "Ingénierie Logicielle\n& Systèmes",
+    "about.focusText": "Développement Backend,\nData & IA",
     "about.text":
       "Je m’appelle Clément et je prépare actuellement un BUT en informatique à l’IUT d’Ifs (Campus 3 de l’Université de Caen Normandie). Passionné par la programmation et les systèmes, j’ai évolué depuis le lycée (spécialités Mathématiques et Numérique & Sciences Informatiques) pour devenir un futur ingénieur polyvalent. À l’aise avec plusieurs langages (C, Python, Java, SQL, Shell), je suis persévérant et curieux, capable de travailler aussi bien en autonomie qu’en équipe. Joueur de tennis et amateur de musique, j’aime relever des défis complexes et transformer des idées en solutions fonctionnelles.",
     "about.tl1Title":
