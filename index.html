@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Poppins:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -27,13 +27,6 @@
 
     <!-- Polite Live Region for Screen Readers (WCAG 4.1.3) -->
     <div id="live-status" role="status" aria-live="polite" class="sr-only"></div>
-
-    <!-- Scroll Progress Bar -->
-    <div id="scroll-progress" aria-hidden="true"></div>
-
-    <!-- Ambient Background Glows -->
-    <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
-    <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
 
     <!-- Sticky Glassmorphic Header -->
     <header class="site-header" id="top">
@@ -80,7 +73,6 @@
                 onclick="setLanguage('fr')"
                 aria-label="Français"
               >
-                <img width="20" height="20" src="https://img.icons8.com/color/48/france.png" alt="" aria-hidden="true" />
                 <span>FR</span>
               </button>
               <button
@@ -90,7 +82,6 @@
                 onclick="setLanguage('en')"
                 aria-label="English"
               >
-                <img width="20" height="20" src="https://img.icons8.com/color/48/usa.png" alt="" aria-hidden="true" />
                 <span>EN</span>
               </button>
             </div>
@@ -150,7 +141,6 @@
                 onclick="setLanguage('fr'); toggleMenu();"
                 aria-label="Français"
               >
-                <img width="20" height="20" src="https://img.icons8.com/color/48/france.png" alt="" aria-hidden="true" />
                 <span>FR</span>
               </button>
               <button
@@ -160,7 +150,6 @@
                 onclick="setLanguage('en'); toggleMenu();"
                 aria-label="English"
               >
-                <img width="20" height="20" src="https://img.icons8.com/color/48/usa.png" alt="" aria-hidden="true" />
                 <span>EN</span>
               </button>
             </li>
@@ -173,7 +162,6 @@
       <!-- HERO / PROFILE SECTION -->
       <section id="profile" class="reveal">
         <div class="section__pic-container hero-avatar-wrapper">
-          <div class="avatar-ring" aria-hidden="true"></div>
           <img
             src="assets/images/avatar-hero.png"
             alt="Avatar Memoji de Clément Bazin"
@@ -456,7 +444,7 @@
                 </div>
               </article>
               <article class="skill-item">
-                <img width="40" height="40" src="https://img.icons8.com/fluency/48/raspberry-pi.png" alt="" aria-hidden="true" loading="lazy" class="icon" />
+                <svg class="icon icon-svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="1.5"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg>
                 <div>
                   <h4 data-i18n="skills.iotTitle">ESP32 & Capteurs</h4>
                   <p class="skill-level" data-i18n="skills.basic">Bases solides</p>
