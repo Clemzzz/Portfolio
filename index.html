@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio de Clément Bazin, étudiant en BUT Informatique à l'IUT d'Ifs (Université de Caen Normandie). Découvrez mes projets en C, Python, Java, Web, SQL et Systèmes."
+      content="Portfolio de Clément Bazin, étudiant en BUT Informatique à l'IUT d'Ifs (Université de Caen Normandie). Projets en C, Python, Java, Web, SQL et Systèmes."
     />
     <meta name="author" content="Clément Bazin" />
-    <title>Clément Bazin - Portfolio</title>
+    <title>Clément Bazin — Portfolio</title>
     <link rel="icon" type="image/png" href="assets/images/avatar-hero.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,7 +28,7 @@
     <!-- Polite Live Region for Screen Readers (WCAG 4.1.3) -->
     <div id="live-status" role="status" aria-live="polite" class="sr-only"></div>
 
-    <!-- Sticky Glassmorphic Header -->
+    <!-- Header -->
     <header class="site-header" id="top">
       <nav id="desktop-nav" aria-label="Navigation principale">
         <a href="#profile" class="logo">
@@ -43,25 +43,14 @@
           </ul>
 
           <div class="nav-controls">
-            <!-- Theme Switch (Sun = Light / Moon = Dark) -->
+            <!-- Theme Switch -->
             <label class="switch theme-switch" title="Basculer le thème clair ou sombre">
               <input
                 id="theme-toggle"
                 type="checkbox"
                 aria-label="Basculer le thème clair ou sombre"
               />
-              <span class="slider" aria-hidden="true">
-                <span class="star star_1"></span>
-                <span class="star star_2"></span>
-                <span class="star star_3"></span>
-                <svg viewBox="0 0 16 16" class="cloud_1 cloud" aria-hidden="true">
-                  <path
-                    transform="matrix(.77976 0 0 .78395-299.99-418.63)"
-                    fill="#fff"
-                    d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"
-                  ></path>
-                </svg>
-              </span>
+              <span class="slider" aria-hidden="true"></span>
             </label>
 
             <!-- Language Switcher -->
@@ -73,7 +62,7 @@
                 onclick="setLanguage('fr')"
                 aria-label="Français"
               >
-                <span>FR</span>
+                <span>fr</span>
               </button>
               <button
                 type="button"
@@ -82,7 +71,7 @@
                 onclick="setLanguage('en')"
                 aria-label="English"
               >
-                <span>EN</span>
+                <span>en</span>
               </button>
             </div>
           </div>
@@ -119,18 +108,7 @@
                   type="checkbox"
                   aria-label="Basculer le thème clair ou sombre"
                 />
-                <span class="slider" aria-hidden="true">
-                  <span class="star star_1"></span>
-                  <span class="star star_2"></span>
-                  <span class="star star_3"></span>
-                  <svg viewBox="0 0 16 16" class="cloud_1 cloud" aria-hidden="true">
-                    <path
-                      transform="matrix(.77976 0 0 .78395-299.99-418.63)"
-                      fill="#fff"
-                      d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"
-                    ></path>
-                  </svg>
-                </span>
+                <span class="slider" aria-hidden="true"></span>
               </label>
             </li>
             <li class="menu-lang-switcher">
@@ -141,7 +119,7 @@
                 onclick="setLanguage('fr'); toggleMenu();"
                 aria-label="Français"
               >
-                <span>FR</span>
+                <span>fr</span>
               </button>
               <button
                 type="button"
@@ -150,7 +128,7 @@
                 onclick="setLanguage('en'); toggleMenu();"
                 aria-label="English"
               >
-                <span>EN</span>
+                <span>en</span>
               </button>
             </li>
           </ul>
@@ -165,24 +143,20 @@
           <img
             src="assets/images/avatar-hero.png"
             alt="Avatar Memoji de Clément Bazin"
-            width="310"
-            height="310"
+            width="280"
+            height="280"
             class="hero-avatar"
           />
-          <div class="floating-badge badge-code" aria-hidden="true">
-            <span class="mono">&lt;SQL · Data · Java /&gt;</span>
-          </div>
         </div>
 
         <div class="section__text">
           <div class="status-pill">
             <span class="status-dot" aria-hidden="true"></span>
-            <span data-i18n="profile.status">Recherche de stage Data / Backend • Avril 2027 • Caen &amp; alentours</span>
+            <span data-i18n="profile.status">Recherche de stage Data / Backend · Avril 2027 · Caen &amp; alentours</span>
           </div>
-          <p class="section__text__p1" data-i18n="profile.greeting">Bonjour, je suis</p>
-          <h1 class="title hero-title">Clément <span class="gradient-text">Bazin</span></h1>
+          <h1 class="title hero-title">Clément Bazin</h1>
           <p class="section__text__p2">
-            <span id="typed-role" data-i18n="profile.role">Étudiant en Informatique</span>
+            <span id="typed-role" data-i18n="profile.role">Étudiant en BUT Informatique — IUT d’Ifs (Caen)</span>
           </p>
           <p class="hero-summary" data-i18n="profile.summary">
             Étudiant en BUT Informatique, orienté développement backend, bases de données (SQL / Data) et environnements Linux.
@@ -191,7 +165,7 @@
           <div class="btn-container">
             <a href="#projects" class="btn btn-color-1">
               <span data-i18n="profile.ctaProjects">Voir mes projets</span>
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
               </svg>
             </a>
@@ -209,7 +183,7 @@
               aria-label="Profil LinkedIn de Clément Bazin"
               title="LinkedIn"
             >
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
                 <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
               </svg>
             </a>
@@ -221,7 +195,7 @@
               aria-label="Profil GitHub de Clément Bazin"
               title="GitHub"
             >
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
                 <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
               </svg>
             </a>
@@ -231,8 +205,8 @@
               aria-label="Envoyer un email à clementbazin363@gmail.com"
               title="clementbazin363@gmail.com"
             >
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
-                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
               </svg>
             </a>
           </div>
@@ -242,8 +216,8 @@
       <!-- ABOUT SECTION -->
       <section id="about" class="reveal">
         <div class="section-header">
-          <p class="section__text__p1" data-i18n="about.subtitle">En savoir plus</p>
-          <h2 class="title" data-i18n="about.title">À propos de moi</h2>
+          <p class="section__text__p1" data-i18n="about.subtitle">01 · Profil</p>
+          <h2 class="title" data-i18n="about.title">À propos</h2>
         </div>
 
         <div class="section-container about-grid">
@@ -265,7 +239,7 @@
                   <img src="assets/icons/experience.png" alt="" class="icon adapt-icon" />
                 </div>
                 <h3 data-i18n="about.experienceTitle">Expérience</h3>
-                <p data-i18n="about.experienceText">3+ ans<br />Programmation & Projets</p>
+                <p class="tabular" data-i18n="about.experienceText">3+ ans<br />Programmation &amp; projets</p>
               </div>
 
               <div class="details-container highlight-card stagger-item">
@@ -273,24 +247,24 @@
                   <img src="assets/icons/education.png" alt="" class="icon adapt-icon" />
                 </div>
                 <h3 data-i18n="about.educationTitle">Formation</h3>
-                <p data-i18n="about.educationText">BUT Informatique<br />IUT Campus 3 Ifs (Caen)</p>
+                <p class="tabular" data-i18n="about.educationText">BUT Informatique<br />IUT Campus 3 Ifs (Caen)</p>
               </div>
 
               <div class="details-container highlight-card stagger-item">
                 <div class="card-icon-badge" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="12" cy="12" r="10"></circle>
                     <path d="m9 12 2 2 4-4"></path>
                   </svg>
                 </div>
                 <h3 data-i18n="about.focusTitle">Objectif</h3>
-                <p data-i18n="about.focusText">Développement Backend,<br />Data & IA</p>
+                <p data-i18n="about.focusText">Développement Backend,<br />Data &amp; IA</p>
               </div>
             </div>
 
             <div class="text-container about-bio-box">
               <p data-i18n="about.text">
-                Je m’appelle Clément et je prépare actuellement un BUT en informatique à l’IUT d’Ifs (Campus 3 de l’Université de Caen Normandie). Passionné par la programmation et les systèmes, j’ai évolué depuis le lycée (spécialités Mathématiques et Numérique & Sciences Informatiques) pour devenir un futur ingénieur polyvalent. À l’aise avec plusieurs langages (C, Python, Java, SQL, Shell), je suis persévérant et curieux, capable de travailler aussi bien en autonomie qu’en équipe. Joueur de tennis et amateur de musique, j’aime relever des défis complexes et transformer des idées en solutions fonctionnelles.
+                Étudiant en BUT Informatique à l’IUT d’Ifs (Université de Caen Normandie), après un baccalauréat général spécialités Mathématiques et NSI. Je travaille principalement en C, Python, Java, SQL et Shell sous environnement Linux, sur des projets de bases de données relationnelles, d’architecture logicielle et de systèmes embarqués. En dehors du code, je pratique le tennis en club et la musique.
               </p>
 
               <div class="about-timeline">
@@ -298,14 +272,14 @@
                   <span class="timeline-year">2025 – Présent</span>
                   <div class="timeline-info">
                     <strong data-i18n="about.tl1Title">BUT Informatique — IUT Grand Ouest Normandie (Ifs)</strong>
-                    <span data-i18n="about.tl1Desc">Algorithmique, langage C, Java, bases de données SQL, administration système Linux, gestion de projet.</span>
+                    <span data-i18n="about.tl1Desc">Algorithmique, langage C, Java, bases de données SQL, administration système Linux, gestion de projet</span>
                   </div>
                 </div>
                 <div class="timeline-item">
                   <span class="timeline-year">2022 – 2025</span>
                   <div class="timeline-info">
                     <strong data-i18n="about.tl2Title">Baccalauréat Général — Institution Sainte-Marie (Caen)</strong>
-                    <span data-i18n="about.tl2Desc">Spécialités Mathématiques & NSI (Numérique et Sciences Informatiques).</span>
+                    <span data-i18n="about.tl2Desc">Spécialités Mathématiques &amp; NSI (Numérique et Sciences Informatiques)</span>
                   </div>
                 </div>
               </div>
@@ -317,7 +291,7 @@
       <!-- SKILLS SECTION -->
       <section id="experience" class="reveal">
         <div class="section-header">
-          <p class="section__text__p1" data-i18n="skills.subtitle">Découvrez mes</p>
+          <p class="section__text__p1" data-i18n="skills.subtitle">02 · Stack technique</p>
           <h2 class="title" data-i18n="skills.title">Compétences</h2>
         </div>
 
@@ -326,12 +300,12 @@
           <div class="details-container skill-category-card stagger-item">
             <div class="skill-card-header">
               <span class="skill-category-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="16 18 22 12 16 6"></polyline>
                   <polyline points="8 6 2 12 8 18"></polyline>
                 </svg>
               </span>
-              <h3 class="experience-sub-title" data-i18n="skills.catLang">Langages & Logiciel</h3>
+              <h3 class="experience-sub-title" data-i18n="skills.catLang">Langages &amp; logiciel</h3>
             </div>
             <div class="article-container">
               <article class="skill-item">
@@ -365,13 +339,13 @@
           <div class="details-container skill-category-card stagger-item">
             <div class="skill-card-header">
               <span class="skill-category-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                   <circle cx="12" cy="12" r="10"></circle>
                   <line x1="2" y1="12" x2="22" y2="12"></line>
                   <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
                 </svg>
               </span>
-              <h3 class="experience-sub-title" data-i18n="skills.catWeb">Web & Bases de données</h3>
+              <h3 class="experience-sub-title" data-i18n="skills.catWeb">Web &amp; bases de données</h3>
             </div>
             <div class="article-container">
               <article class="skill-item">
@@ -389,7 +363,7 @@
               <article class="skill-item">
                 <img width="40" height="40" src="https://img.icons8.com/fluency/48/sql.png" alt="" aria-hidden="true" loading="lazy" class="icon" />
                 <div>
-                  <h4 data-i18n="skills.sqlTitle">SQL & Modélisation</h4>
+                  <h4 data-i18n="skills.sqlTitle">SQL &amp; modélisation</h4>
                 </div>
               </article>
               <article class="skill-item">
@@ -405,13 +379,13 @@
           <div class="details-container skill-category-card stagger-item">
             <div class="skill-card-header">
               <span class="skill-category-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                   <rect x="2" y="4" width="20" height="16" rx="2"></rect>
                   <path d="m6 8 4 4-4 4"></path>
                   <line x1="12" y1="16" x2="18" y2="16"></line>
                 </svg>
               </span>
-              <h3 class="experience-sub-title" data-i18n="skills.catSys">Systèmes & Outils</h3>
+              <h3 class="experience-sub-title" data-i18n="skills.catSys">Systèmes &amp; outils</h3>
             </div>
             <div class="article-container">
               <article class="skill-item">
@@ -429,13 +403,13 @@
               <article class="skill-item">
                 <img src="assets/icons/github.png" alt="" aria-hidden="true" loading="lazy" class="icon adapt-icon" />
                 <div>
-                  <h4 data-i18n="skills.gitTitle">Git & GitHub</h4>
+                  <h4 data-i18n="skills.gitTitle">Git &amp; GitHub</h4>
                 </div>
               </article>
               <article class="skill-item">
-                <svg class="icon icon-svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="1.5"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg>
+                <svg class="icon icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="1.5"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg>
                 <div>
-                  <h4 data-i18n="skills.iotTitle">ESP32 & Capteurs</h4>
+                  <h4 data-i18n="skills.iotTitle">ESP32 &amp; capteurs</h4>
                 </div>
               </article>
             </div>
@@ -446,29 +420,29 @@
       <!-- PROJECTS SECTION -->
       <section id="projects" class="reveal">
         <div class="section-header">
-          <p class="section__text__p1" data-i18n="projects.subtitle">Découvrez mes</p>
+          <p class="section__text__p1" data-i18n="projects.subtitle">03 · Réalisations</p>
           <h2 class="title" data-i18n="projects.title">Projets réalisés</h2>
         </div>
 
         <!-- Project Filter Buttons -->
         <div class="project-filters" role="group" aria-label="Filtrer les projets par catégorie">
           <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true" data-i18n="projects.filterAll">Tous</button>
-          <button type="button" class="filter-btn" data-filter="web" aria-pressed="false" data-i18n="projects.filterWeb">Web & Data</button>
-          <button type="button" class="filter-btn" data-filter="system" aria-pressed="false" data-i18n="projects.filterSys">Système & C</button>
-          <button type="button" class="filter-btn" data-filter="iot" aria-pressed="false" data-i18n="projects.filterIot">IoT & Embarqué</button>
+          <button type="button" class="filter-btn" data-filter="web" aria-pressed="false" data-i18n="projects.filterWeb">Web &amp; Data</button>
+          <button type="button" class="filter-btn" data-filter="system" aria-pressed="false" data-i18n="projects.filterSys">Système &amp; C</button>
+          <button type="button" class="filter-btn" data-filter="iot" aria-pressed="false" data-i18n="projects.filterIot">IoT &amp; Embarqué</button>
         </div>
 
         <div class="projects-grid stagger-group">
           <!-- Project 1: Lisieux Normandie -->
-          <article class="details-container color-container project-card stagger-item" data-category="web">
+          <article class="details-container project-card stagger-item" data-category="web">
             <div class="project-card-top">
-              <span class="project-badge">Web & SQL</span>
-              <span class="project-meta" data-i18n="projects.saeMeta">Projet universitaire • 2025–2026</span>
+              <span class="project-badge">Web &amp; SQL</span>
+              <span class="project-meta" data-i18n="projects.saeMeta">Projet universitaire · 2025–2026</span>
             </div>
             <h3 class="experience-sub-title project-title" data-i18n="projects.sae2Title">
-              COMMUNAUTÉ LISIEUX NORMANDIE
+              Communauté Lisieux Normandie
             </h3>
-            <p class="project-description" data-i18n="projects.sae2Text">
+            <p class="project-description tabular" data-i18n="projects.sae2Text">
               Création d’un site web et d’une base de données pour accompagner l’élaboration du Plan Local de Déplacements (PLD). L’objectif est de recenser les besoins de mobilité de 73 700 habitants face aux enjeux de la transition énergétique.
             </p>
             <div class="project-tags">
@@ -481,13 +455,13 @@
           </article>
 
           <!-- Project 2: Architecture C-Engine -->
-          <article class="details-container color-container project-card stagger-item" data-category="system">
+          <article class="details-container project-card stagger-item" data-category="system">
             <div class="project-card-top">
-              <span class="project-badge">Bas Niveau & C</span>
-              <span class="project-meta" data-i18n="projects.gameMeta">Projet universitaire • 2025–2026</span>
+              <span class="project-badge">Bas niveau &amp; C</span>
+              <span class="project-meta" data-i18n="projects.gameMeta">Projet universitaire · 2025–2026</span>
             </div>
             <h3 class="experience-sub-title project-title" data-i18n="projects.gameTitle">
-              ARCHITECTURE C-ENGINE
+              Architecture C-Engine
             </h3>
             <p class="project-description" data-i18n="projects.gameText">
               Implémentation complète du moteur de jeu et de la logique de déplacement. Création d’une interface console ergonomique avec gestion robuste des erreurs de saisie, le tout en langage C.
@@ -501,15 +475,15 @@
           </article>
 
           <!-- Project 3: Poste de développement virtuel -->
-          <article class="details-container color-container project-card stagger-item" data-category="system">
+          <article class="details-container project-card stagger-item" data-category="system">
             <div class="project-card-top">
-              <span class="project-badge">Systèmes & OS</span>
-              <span class="project-meta" data-i18n="projects.saeMeta">Projet universitaire • 2025–2026</span>
+              <span class="project-badge">Systèmes &amp; OS</span>
+              <span class="project-meta" data-i18n="projects.saeMeta">Projet universitaire · 2025–2026</span>
             </div>
             <h3 class="experience-sub-title project-title" data-i18n="projects.saeTitle">
-              POSTE DE DÉVELOPPEMENT VIRTUEL
+              Poste de développement virtuel
             </h3>
-            <p class="project-description" data-i18n="projects.saeText">
+            <p class="project-description tabular" data-i18n="projects.saeText">
               Installation et administration d’un poste complet pour le développement. Configuration d’une machine virtuelle en dual boot Windows 10 / Ubuntu avec partitionnement commun et gestion multi-utilisateurs.
             </p>
             <div class="project-tags">
@@ -521,13 +495,13 @@
           </article>
 
           <!-- Project 4: Projet Éduc'Arte -->
-          <article class="details-container color-container project-card stagger-item" data-category="iot web">
+          <article class="details-container project-card stagger-item" data-category="iot web">
             <div class="project-card-top">
-              <span class="project-badge">IoT & Web</span>
-              <span class="project-meta" data-i18n="projects.eduMeta">Projet pédagogique • 2024–2025</span>
+              <span class="project-badge">IoT &amp; Web</span>
+              <span class="project-meta" data-i18n="projects.eduMeta">Projet pédagogique · 2024–2025</span>
             </div>
             <h3 class="experience-sub-title project-title" data-i18n="projects.eduTitle">
-              PROJET ÉDUC’ARTE
+              Projet Éduc’Arte
             </h3>
             <p class="project-description" data-i18n="projects.eduText">
               Création d’un serveur web embarqué pour simuler l’effet de serre, hébergé sur une carte microcontrôleur ESP32. Acquisition en temps réel via capteurs d’humidité et de température et export des données en CSV.
@@ -536,7 +510,7 @@
               <span class="tech-tag">Python</span>
               <span class="tech-tag">ESP32</span>
               <span class="tech-tag">HTML5 / CSS3</span>
-              <span class="tech-tag">Capteurs & CSV</span>
+              <span class="tech-tag">Capteurs &amp; CSV</span>
             </div>
           </article>
         </div>
@@ -559,10 +533,10 @@
       <!-- CONTACT SECTION -->
       <section id="contact" class="reveal">
         <div class="section-header">
-          <p class="section__text__p1" data-i18n="contact.subtitle">Entrons en contact</p>
-          <h2 class="title" data-i18n="contact.title">Contactez-moi</h2>
+          <p class="section__text__p1" data-i18n="contact.subtitle">04 · Contact</p>
+          <h2 class="title" data-i18n="contact.title">Me contacter</h2>
           <p class="contact-intro" data-i18n="contact.intro">
-            Vous avez une opportunité de stage, d’alternance ou un projet à partager ? N’hésitez pas à m’écrire !
+            Disponible pour un stage ou une alternance en développement backend, data ou administration système à partir d’avril 2027.
           </p>
         </div>
 
@@ -584,11 +558,11 @@
               aria-label="Copier l'adresse email clementbazin363@gmail.com"
             >
               <span class="copy-icon-stack" aria-hidden="true">
-                <svg class="icon-state icon-copy" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="icon-state icon-copy" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                   <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                   <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                 </svg>
-                <svg class="icon-state icon-check" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="icon-state icon-check" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
               </span>
@@ -648,15 +622,15 @@
             <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
           </ul>
         </nav>
-        <p class="copyright" data-i18n="footer.rights">
-          Copyright &#169; 2026 Clément Bazin. Tous droits réservés.
+        <p class="copyright tabular" data-i18n="footer.rights">
+          © 2026 Clément Bazin · Caen, Normandie
         </p>
       </div>
     </footer>
 
     <!-- Back to Top Button -->
     <a href="#top" id="back-to-top" aria-label="Retour en haut de la page" title="Retour en haut">
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <path d="m18 15-6-6-6 6"/>
       </svg>
     </a>
